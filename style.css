@@ -1,0 +1,187 @@
+body{
+    /*Text*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    color: white;
+    /*Box*/
+    background-color: #202020;
+    /*Display*/
+    display: block;
+    /*Flags*/
+}
+    
+    /*Header*/
+header{
+    /*Text*/
+    font-size: 2.3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    /*Box*/
+    padding: 20px 15px;
+    background-color: #202020;
+    /*Display*/
+    display: flex;
+    /*Flags*/
+}
+/*Head-title*/
+a.head-title{
+    /*Text*/
+    color:red;
+    /*Box*/
+    margin-right: 10px;
+    /*Display*/
+    /*Flags*/
+}
+/*Head-info*/
+.info{
+    /*Text*/
+    /*Box*/
+    /*Display*/
+    display: flex;/*Pc*/
+    flex-direction: row;
+    justify-content: left;
+    flex-basis: 100%;/*Pc*/
+    /*Flags*/
+}
+
+a.head-info{
+    /*Text*/
+    /*Box*/
+    margin: 0 10px;
+    /*Display*/
+    /*Efects*/    
+    transition: color 300ms ease-in-out;
+    /*Flags*/ 
+}
+
+a.head-info:hover, .a.head-info:focus{
+    color: red;
+}
+
+
+/*Title*/
+.title{
+    /*Text*/
+    font-weight: 600;
+    font-size: 2.5em;
+    text-align: center;
+    /*Box*/
+    /*Display*/
+    display: flex;
+    align-items: center;
+    /*Flags*/
+}
+
+.title-text{
+    /*Text*/
+    /*Box*/
+    /*Display*/
+    flex-basis: 50%;
+    /*Flags*/
+}
+
+.title-text p{    
+    margin: 25px 0 ;
+}
+
+.title-text p span{
+    color: red;
+}
+
+.title-img{
+    /*Text*/
+    /*Box*/
+    width: 50%;
+    /*Display*/
+    /*Flags*/
+    background-color: sandybrown;
+}
+
+/*Text*/
+/*Box*/
+/*Display*/
+/*Flags*/
+
+/*Characters*/
+.character{
+    /*Text*/
+    font-size: 2em;
+    text-align: center;
+    font-weight: 300;
+    /*Box*/
+    margin: 40px 0;
+    /*Display*/
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;/*PC*/
+    /*Flags*/
+}
+
+.character:nth-of-type(2n){
+    flex-direction: row;
+}
+
+.character-info{
+    flex-basis: 50%;
+}
+
+.character-info-name{
+    /*Text*/
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2em;
+    /*Box*/
+    /*Display*/
+    /*Flags*/
+}
+
+.character-info-text{
+    /*Text*/
+    line-height: 1.5em;
+    /*Box*/
+    padding: 20px 20%;
+    /*Display*/
+    /*Flags*/
+}
+
+.character-img-cont{
+    flex-basis: 50%;
+}
+
+.character-img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/*Tablet*/
+@media (max-width: 1000px){
+    .title-text{
+        font-size: 0;
+        flex-basis: 0;
+    }
+    .title-img{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    a.head-title{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .info{
+        justify-content: center;
+    }
+    /*Characters*/
+    .character{
+        flex-direction: column;
+    }
+    .character:nth-of-type(2n){
+        flex-direction: column;
+    }
+}
